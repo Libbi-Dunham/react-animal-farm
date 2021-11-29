@@ -6,8 +6,8 @@ export default function Animal({ name, says, top, left, type }) {
     <>
       <div className="animal" style={{ top, left }}>
         <img alt={name} src={`${process.env.PUBLIC_URL}/animals/${type}.svg`} />
-        <p className="name">(name)</p>
-        <p>(says)</p>
+        <p className="name">{name}</p>
+        <p>{says}</p>
       </div>
     </>
   )
